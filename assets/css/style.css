@@ -1,0 +1,110 @@
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Red Hat Display", sans-serif;
+}
+.mySlides {
+  display: none;
+}
+.slide-img {
+  height: 100vh;
+  width: 45vw;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  height: 10vh;
+  position: relative;
+}
+
+/* The dots/bullets/indicators */
+.dot-container {
+  position: absolute;
+  top: 510px;
+  left: 30px;
+}
+
+.dot {
+  height: 7px;
+  width: 25px;
+  margin: 0 2px;
+  background-color: inherit;
+  border: 1px solid #fff;
+  border-radius: 2px;
+  display: inline-block;
+  transition: background-color 0.2s ease;
+}
+
+.text-container {
+  position: absolute;
+  top: 550px;
+  left: 30px;
+}
+.logo-container {
+  position: absolute;
+  top: 50px;
+  left: 30px;
+  background: inherit;
+}
+
+.active {
+  background-color: #fff;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 3.5s;
+}
+
+.form-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.mainform-container {
+  width: 60%;
+  margin: 10% auto 0 auto;
+}
+
+.option {
+  margin-top: 10px;
+  margin-bottom: 20px !important;
+}
+
+.option::before {
+  content: "____________________________";
+  padding: 5px;
+}
+.option::after {
+  content: "____________________________";
+  padding: 5px;
+}
+.sign-up-text a {
+  text-decoration: none;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 768px) {
+  /* .main {
+    display: flex;
+    flex-direction: column;
+  } */
+}
